@@ -36,9 +36,7 @@ app.get("/users", (req, res) => {
   res.send(users);
 });
 
-app.get("/users1", (req, res) => {
-  res.send(users);
-});
+
 
 app.get("/users/:id", (req, res) => {
   const user = users.find(u => u.id == req.params.id);
